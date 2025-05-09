@@ -1,0 +1,10 @@
+# OS generated files
+._*
+
+# IDE / Editor specific
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
