@@ -4,7 +4,8 @@ SELECT
     film.title
 FROM
     film
-LEFT JOIN
-    inventory ON inventory.film_id = film.film_id
-WHERE
-    inventory.inventory_id IS NULL;
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM inventory
+    WHERE inventory.film_id = film.film_id 
+);
