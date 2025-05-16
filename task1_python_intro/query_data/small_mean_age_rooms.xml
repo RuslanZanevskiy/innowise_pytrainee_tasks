@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+    <record>
+        <name>Room #661</name>
+        <mean_age_in_days>4454</mean_age_in_days>
+    </record>
+    <record>
+        <name>Room #913</name>
+        <mean_age_in_days>7361</mean_age_in_days>
+    </record>
+    <record>
+        <name>Room #111</name>
+        <mean_age_in_days>11726</mean_age_in_days>
+    </record>
+    <record>
+        <name>Room #957</name>
+        <mean_age_in_days>12240</mean_age_in_days>
+    </record>
+    <record>
+        <name>Room #773</name>
+        <mean_age_in_days>12986</mean_age_in_days>
+    </record>
+</data>
