@@ -58,7 +58,7 @@ class DbExecutor:
     def populate_table(self, table_name, columns, values):
         logger.info(f'starting to populate table {table_name} with {len(values)} values')
 
-        query = f"INSERT INTO {table_name} ({', '.join(columns)}) VALUES %s;"
+        query = f"INSERT INTO {table_name} ({', '.join(columns)}) VALUES %s ON CONFLICT DO NOTHING;"
         try:
             logger.info(f'executing query to populate table {table_name}')
             execute_values(self.cursor, query, values)

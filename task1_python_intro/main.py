@@ -30,16 +30,10 @@ def main():
     rooms_data = [[*d.values()] for d in rooms_data]
     students_data = [[*d.values()] for d in students_data]
 
-    try:
-        executor.populate_table('Rooms', ['id', 'name'], rooms_data)
-    except Exception as e:
-        logging.error(e) 
-    try:
-        executor.populate_table('Students', 
-                                ['birthday', 'id', 'name', 'room_id', 'sex'], 
-                                students_data)
-    except Exception as e:
-        logging.error(e) 
+    executor.populate_table('Rooms', ['id', 'name'], rooms_data)
+    executor.populate_table('Students', 
+                            ['birthday', 'id', 'name', 'room_id', 'sex'], 
+                            students_data)
 
     executor.execute_sql_file('sql/indexes.sql')
 
